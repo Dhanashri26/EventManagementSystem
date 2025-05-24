@@ -1,0 +1,89 @@
+.client-testimonials {
+  padding: 40px;
+  background-color: #e0eaf1;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: space-between;
+}
+
+.client-testimonials h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+  width: 100%;
+}
+
+.testimonial {
+  background-color: white;;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%; /* Each card will take 30% of the container */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  cursor: pointer;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.client-initial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+  background-color: #6a4c9c; /* Default color, will be changed dynamically */
+}
+
+.client-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #6a4c9c; /* Dark lavender for name */
+}
+
+.testimonial-date {
+  font-size: 14px;
+  color: #b0a7c1; /* Light lavender for date */
+}
+
+.testimonial-content p {
+  font-size: 16px;
+  color: #333; /* Dark text color for better contrast */
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.testimonial-footer {
+  display: none; /* Hide footer with email and source */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .testimonial {
+    width: 48%; /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial {
+    width: 100%; /* 1 card per row */
+  }
+}

@@ -1,0 +1,159 @@
+.custom-page-wrapper {
+  background-color: #e0eaf1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.custom-services-container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.custom-intro {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.custom-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.custom-service-card {
+  /* background-color: #fef9f4; */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-service-card:hover {
+  transform: scale(1.02);
+  border-color: #0077cc;
+}
+
+/* ✅ Image transition for hover and click */
+.custom-service-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* ✅ Zoom-in on hover */
+.custom-service-card:hover .custom-service-img {
+  transform: scale(1.1);
+}
+
+/* ✅ Zoom-out on click */
+.zoom-out-active .custom-service-img {
+  transform: scale(0.85);
+}
+
+.custom-service-card h2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.custom-service-card p {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.custom-footer-spacing {
+  margin-top: 60px;
+}
+#serviceId{
+  display: flex;
+  justify-content: center;
+  font-weight: 550;
+  color: purple;
+}
+
+.venue-card {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-image: url('/public/assests/contact_Screen_cardBg.jpeg');   /*✅ Apply background here */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  color: #fff; /* Makes text visible on dark backgrounds */
+}
+
+.venue-images {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.venue-images img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.venue-images img:hover {
+  transform: scale(1.05);
+}
+
+.venue-content {
+  flex: 1;
+  text-align: left;
+}
+
+.venue-content h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.venue-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.explore-btn {
+  padding: 12px 24px;
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #ff5722;
+}
+
+/* Optional: remove or hide .leaf */
+.leaf {
+  display: none;
+}

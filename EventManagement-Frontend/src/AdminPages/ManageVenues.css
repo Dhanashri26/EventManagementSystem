@@ -1,0 +1,119 @@
+.manage-venues-container {
+   max-width: 1200px;
+  margin: 7rem auto 2rem; /* Increased top margin to account for navbar */
+  padding: 3rem 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: purple;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-container input {
+  padding: 0.8rem 1rem;
+  border: 2px solid purple; /* Green border */
+  border-radius: 8px;
+  width: 60%;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+.form-container input:focus {
+  border-color: purple; /* Darker green on focus */
+}
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn {
+  background-color: purple; /* Green for Add */
+  color: white;
+}
+
+.update-btn {
+  background-color: #2196F3; /* Blue for Update */
+  color: white;
+}
+
+.add-btn:hover, .update-btn:hover {
+  transform: scale(1.05);
+}
+
+.venues-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.venues-table th, .venues-table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.venues-table th {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.venue-row:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons button {
+  margin-right: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn {
+  background-color: #2196F3; /* Blue for Edit */
+  color: white;
+}
+
+.delete-btn {
+  background-color: #F44336; /* Red for Delete */
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #1976D2; /* Darker blue */
+  transform: scale(1.1);
+}
+
+.delete-btn:hover {
+  background-color: #D32F2F; /* Darker red */
+  transform: scale(1.1);
+}
+
+.edit-btn svg, .delete-btn svg {
+  margin-right: 0.5rem; /* Space between icon and text */
+}

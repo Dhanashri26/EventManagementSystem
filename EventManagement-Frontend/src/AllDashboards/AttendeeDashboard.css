@@ -1,0 +1,130 @@
+/* Container layout */
+.attendee-dashboard.sidebar-layout {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding-top: 70px; /* Adjust this to your navbar height */
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+   position: fixed; /* Keeps sidebar visible */
+  top: 70px;       /* Push it down below navbar */
+  left: 0;
+  height: calc(100vh - 70px); /* Full height minus navbar */
+  width: 250px;
+  background-color: #2f3e46;
+  color: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #546a76;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 0;
+}
+
+.sidebar-link {
+  color: #d1e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #3d5a5a;
+  color: #ffffff;
+}
+
+.logout-link {
+  color: #ffb4a2;
+}
+
+.logout-link:hover {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
+/* Main content */
+.dashboard-main {
+  flex-grow: 1;
+  margin-left: 250px; /* same as sidebar width */
+  padding: 3rem 2rem 3rem 3rem; /* top padding handled by parent */
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: calc(100vh - 70px);
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  color: #2f3e46;
+}
+
+.dashboard-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.search-section input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-section button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #2f3e46;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-section button:hover {
+  background-color: #3d5a5a;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.event-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}

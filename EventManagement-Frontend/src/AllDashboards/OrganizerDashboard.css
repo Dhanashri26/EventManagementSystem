@@ -1,0 +1,197 @@
+/* Adjusted for navbar height ~60px */
+.org-dashboard-wrapper {
+  display: flex;
+  min-height: calc(100vh - 60px); /* Full viewport minus navbar height */
+  padding-top: 60px; /* space for fixed navbar */
+  background: linear-gradient(145deg, #e2e8f0, #f8fafc);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar fixed and full height minus navbar */
+.org-sidebar {
+  width: 240px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 60px; /* below navbar */
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.org-sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.org-sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.org-sidebar-menu li {
+  margin-bottom: 1.5rem;
+}
+
+.org-link {
+  display: flex;
+  align-items: center;
+  color: #34495e;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.org-icon {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #1f618d;
+}
+
+.org-link:hover {
+  color: #2f80ed;
+}
+
+/* Main content margin-left because sidebar fixed */
+.org-main-content {
+  margin-left: 240px;
+  flex-grow: 1;
+  padding: 3rem;
+  color: #2c3e50;
+}
+
+/* Titles and text */
+.org-main-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.org-main-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* Info Cards */
+.org-dashboard-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.org-info-card {
+  flex: 1;
+  min-width: 180px;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.org-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.org-info-card h3 {
+  font-size: 2rem;
+  color: #1f618d;
+}
+
+.org-info-card p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Filter Section */
+.org-event-filter {
+  margin-top: 3rem;
+}
+
+.org-filter-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.org-filter-form input {
+  padding: 8px;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.org-filter-form button {
+  padding: 8px 20px;
+  background-color: #1f618d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.org-filter-form button:hover {
+  background-color: #155a82;
+}
+
+.org-filtered-results {
+  margin-top: 25px;
+}
+
+/* New Card Grid Layout for Search Results */
+.org-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Event Card Styling */
+.org-event-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.org-event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Event Image */
+.org-event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Event Info */
+.org-event-info {
+  padding: 1rem;
+}
+
+.org-event-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e1e2f;
+  margin-bottom: 0.5rem;
+}
+
+/* Legacy List Style (optional, unused if using card grid) */
+.org-event-list {
+  list-style: none;
+  padding-left: 0;
+}

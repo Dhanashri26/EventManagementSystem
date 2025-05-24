@@ -1,0 +1,74 @@
+/* SignUp.css */
+
+/* ==== Layout and Background ==== */
+.signup-page {
+  background: #e0eaf1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==== Form Card ==== */
+.signup-form-box {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-form-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ==== Form Fields ==== */
+.signup-form input,
+.signup-form select {
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #a966cc;
+  box-shadow: 0 0 8px rgba(169, 102, 204, 0.2);
+  outline: none;
+}
+
+/* ==== Button ==== */
+.btn-purple {
+  background-color: purple;
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 0;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-purple:hover {
+  background-color: #8c4bb3;
+  transform: scale(1.03);
+}
+
+/* ==== Headings & Text ==== */
+.text-purple {
+  color: #a966cc;
+}
+
+.signup-footer-text,
+.signup-form-box p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ==== Animations ==== */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');

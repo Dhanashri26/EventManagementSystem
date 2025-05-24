@@ -1,0 +1,114 @@
+.about-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2f4, #dfd9e0);
+}
+
+.about-container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#about-heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 550;
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* Cards */
+.about-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.about-card.zoomed {
+  transform: scale(0.97);
+}
+
+.about-text {
+  flex: 1 1 300px;
+  padding: 10px 15px;
+}
+
+.about-text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: purple;
+}
+
+.about-text p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.about-image {
+  flex: 1 1 250px;
+  padding: 10px 15px;
+}
+
+.about-image img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+.mission-vision .about-image {
+  order: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-image {
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .about-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-image img {
+    max-height: 180px;
+  }
+}
+
+.about-footer-spacing {
+  margin-top: 60px;
+}
